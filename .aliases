@@ -1,9 +1,6 @@
 # Shortcuts
 alias ch='history | grep "git commit"'
 alias hg='history | grep'
-alias yt="subl '$HOME/Google Drive/My Drive/YouTube/Scripts/'"
-alias cyt="cd '$HOME/Google Drive/My Drive/YouTube/Scripts/'"
-alias oyt="open '$HOME/Google Drive/My Drive/YouTube/Scripts/'"
 
 # Detect which `ls` flavor is in use
 if ls --color >/dev/null 2>&1; then # GNU `ls`
@@ -27,9 +24,6 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
-# Get OS X Software Updates
-alias update_system='sudo softwareupdate -i -a'
-
 # Update/upgrade Homebrew and their installed packages
 alias update_brew='brew update; brew upgrade; brew upgrade --cask; brew cleanup'
 
@@ -51,5 +45,5 @@ alias reg_mode='defaults write com.apple.dock autohide -bool false && killall Do
 alias clean="osascript -e 'tell application \"Finder\" to empty the trash' 2>/dev/null; rm -rf ~/Downloads/*"
 
 # Virtual Environments
-alias wipe_env='rm -rf ~/venvs/tutorial; python3 -m venv ~/venvs/tutorial'
-alias tut_env='source ~/venvs/tutorial/bin/activate'
+alias wipe_env='rm -rf ~/venvs/data_projects; python3 -m venv ~/venvs/data_projects'
+alias tut_env='source ~/venvs/data_projects/bin/activate'
